@@ -17,7 +17,7 @@ function tabs(tabsSelector, tabsParent, tabContentSelector, tabActiveClass) {
     tabsContent[i].classList.remove('hide');
 
     tabs[i].classList.add(tabActiveClass);
-  }
+  };
   hideTabContent();
   showTabContent();
 
@@ -29,9 +29,9 @@ function tabs(tabsSelector, tabsParent, tabContentSelector, tabActiveClass) {
           hideTabContent();
           showTabContent(i);
         }
-      })
+      });
     }
   });
-};
+}
 
 export default tabs;
